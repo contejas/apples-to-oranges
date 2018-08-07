@@ -3,9 +3,9 @@ def test_algorithm(answer_func):
 
     for i in range(1,21):
         try:
-            ans = answer_func('/Users/tejasshah/Desktop/apples-to-oranges/pictures/ato' + str(i) + '.jpg')
+            ans = answer_func('pictures/ato' + str(i) + '.jpg')
         except:
-            ans = answer_func('/Users/tejasshah/Desktop/apples-to-oranges/pictures/ato' + str(i) + '.jpeg')
+            ans = answer_func('pictures/ato' + str(i) + '.jpeg')
         print("The image is an " +
               str(training_answers[i-1]) +
               ", the data says its a " + str(ans[0]) +
