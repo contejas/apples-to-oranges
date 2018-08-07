@@ -1,6 +1,8 @@
 # apples-to-oranges
 An AI Program that can tell the difference between pictures of apples and oranges using various algorithms
 
+
+
 | Model               | Time the model took to label the test image     |
 |---------------------|-------------------------------------------------|
 | Decision Tree       | 40.053552865982056 seconds                      |
