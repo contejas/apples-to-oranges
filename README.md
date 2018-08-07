@@ -1,7 +1,8 @@
 # apples-to-oranges
 An AI Program that can tell the difference between pictures of apples and oranges using various algorithms
-
-
+_
+_
+_
 
 | Model               | Time the model took to label the test image     |
 |---------------------|-------------------------------------------------|
