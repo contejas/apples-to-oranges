@@ -26,7 +26,7 @@ class Public_Variable_Storage():
         return self.algorithm
 
     def setTime(self, t):
-        self.timing = str(round(t))
+        self.timing = str(t)
     def getTime(self):
         return self.timing
 
@@ -56,7 +56,8 @@ def final_verdict():
         col = "blue"
     tk.Label(verdict, text=f, fg=col, font=('Comic Sans MS',30)).grid()
     tk.Label(verdict, text="Using a " + public.getAlgorithm() + " algorithm, the program").grid()
-    tk.Label(verdict, text="trained and tested data to come up with an answer in about " + public.getTime() + " seconds!").grid()
+    tk.Label(verdict, text="trained and tested data to come up with an answer in").grid()
+    tk.Label(verdict, text=str(public.getTime()) + " seconds!").grid()
     tk.Button(verdict, text="Exit", command=exit).grid()
 
 
