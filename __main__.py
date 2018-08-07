@@ -89,8 +89,41 @@ def chooseAlgorithm():
         public.setTime(ans[1])
         final_verdict()
 
+    def log_regression():
+        public.setAlgorithm("Logistic Regression")
+        tk.Label(algo, text="Loading... Please Wait...").grid()
+        time.sleep(2)
+        import logistic_regression
+        ans = logistic_regression.answer(public.getImgPath())
+        public.setFinalChar(ans[0])
+        public.setTime(ans[1])
+        final_verdict()
+
+    def neural_net():
+        public.setAlgorithm("Neural Network")
+        tk.Label(algo, text="Loading... Please Wait...").grid()
+        time.sleep(2)
+        import neural_network
+        ans = neural_network.answer(public.getImgPath())
+        public.setFinalChar(ans[0])
+        public.setTime(ans[1])
+        final_verdict()
+
+    def k_means():
+        public.setAlgorithm("K-Means Clustering")
+        tk.Label(algo, text="Loading... Please Wait...").grid()
+        time.sleep(2)
+        import k_means_clustering
+        ans = k_means_clustering.answer(public.getImgPath())
+        public.setFinalChar(ans[0])
+        public.setTime(ans[1])
+        final_verdict()
+
     tk.Button(algo, text="Decision Tree", command=decision_tree).grid()
     tk.Button(algo, text="K-Nearest Neighbors", command=kn_neighbors).grid()
+    tk.Button(algo, text="Logistic Regression", command=log_regression).grid()
+    tk.Button(algo, text="Neural Network", command=neural_net).grid()
+    tk.Button(algo, text="K-Means Clustering", command=k_means).grid()
     algo.mainloop()
 
 
