@@ -74,7 +74,7 @@ def chooseAlgorithm():
         public.setAlgorithm("Decision Tree")
         tk.Label(algo, text="Loading... Please Wait...").grid()
         time.sleep(2)
-        import decision_tree
+        from algorithms import decision_tree
         ans = decision_tree.answer(public.getImgPath())
         public.setFinalChar(ans[0])
         public.setTime(ans[1])
@@ -84,7 +84,7 @@ def chooseAlgorithm():
         public.setAlgorithm("K-Nearest Neighbors")
         tk.Label(algo, text="Loading... Please Wait...").grid()
         time.sleep(2)
-        import k_nearest_neighbors
+        from algorithms import k_nearest_neighbors
         ans = k_nearest_neighbors.answer(public.getImgPath())
         public.setFinalChar(ans[0])
         public.setTime(ans[1])
@@ -94,7 +94,7 @@ def chooseAlgorithm():
         public.setAlgorithm("Logistic Regression")
         tk.Label(algo, text="Loading... Please Wait...").grid()
         time.sleep(2)
-        import logistic_regression
+        from algorithms import logistic_regression
         ans = logistic_regression.answer(public.getImgPath())
         public.setFinalChar(ans[0])
         public.setTime(ans[1])
@@ -104,7 +104,7 @@ def chooseAlgorithm():
         public.setAlgorithm("Neural Network")
         tk.Label(algo, text="Loading... Please Wait...").grid()
         time.sleep(2)
-        import neural_network
+        from algorithms import neural_network
         ans = neural_network.answer(public.getImgPath())
         public.setFinalChar(ans[0])
         public.setTime(ans[1])
@@ -114,7 +114,7 @@ def chooseAlgorithm():
         public.setAlgorithm("K-Means Clustering")
         tk.Label(algo, text="Loading... Please Wait...").grid()
         time.sleep(2)
-        import k_means_clustering
+        from algorithms import k_means_clustering
         ans = k_means_clustering.answer(public.getImgPath())
         public.setFinalChar(ans[0])
         public.setTime(ans[1])
